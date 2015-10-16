@@ -2,46 +2,44 @@
 <html>
 <head>
   <title>Portfolio</title>
- 
+
   <%= stylesheet_link_tag 'application',  'https://fonts.googleapis.com/css?family=Roboto:100,300,300italic,500,700'%>
-  <%= stylesheet_link_tag 'application',  'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'%>  
+  <%= stylesheet_link_tag 'application',  'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'%>
   <%= stylesheet_link_tag 'application', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'%>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="header"> 
-    <div class="container"> 
-      <div class="row"> 
-        <div class="menu col-md-8"> 
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="menu col-md-8">
           <ul>
             <li><%= link_to "Welcome", root_path %></li>
             <li><%= link_to "Portfolio" %></li>
             <li><%= link_to "Blog" %></li>
             <li> <%= link_to "About" %></li>
-            <li><%= link_to "Contact" %></li>            
-          </ul> 
-        </div> 
-        <div class="name col-md-4"> 
-          <h1>Radi Totev</h1> 
-        </div> 
-      </div> 
-    </div> 
-  </div> 
-  <div class="main home"> 
-    
+            <li><%= link_to "Contact" %></li>
+          </ul>
+        </div>
+        <div class="name col-md-4">
+          <h1>Radi Totev</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <%= yield %>
-    
-   </div>
-  <div class="footer"> 
-    <div class="container">   
-      <div class="social_media">        
+
+  <div class="footer">
+    <div class="container">
+      <div class="social_media">
         <%= link_to( content_tag(:i, nil, class: 'fa fa-github fa-3x'), "https://github.com/raditotev") %>
         <%= link_to( content_tag(:i, nil, class: 'fa fa-linkedin-square fa-3x')) %>
-        <%= link_to( content_tag(:i, nil, class: 'fa fa-twitter-square fa-3x')) %>        
+        <%= link_to( content_tag(:i, nil, class: 'fa fa-twitter-square fa-3x')) %>
      	</div>
-    </div> 
+    </div>
      <p>&copy; 2015 Radi Totev</p>
   </div>
   </body>

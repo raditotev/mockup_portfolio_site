@@ -94,7 +94,7 @@ a.btn:hover,
     transition: background-color .5s
 }
 .home .jumbotron {
-    background: url('http://www.aspenchamber.org/sites/default/files/styles/jumbotron/public/jumbotron/Paraglider_Aspen-Mountain.jpg?itok=qx-UHS4S') center center;
+    background: url('./jumbotron.jpg') center center;
     background-size: cover;
     min-height: 600px;
     width: 100%
@@ -102,7 +102,7 @@ a.btn:hover,
 
 .jumbotron h2{
   text-align: center;
-	color: #000029;  
+	color: #000029;
 }
 
 .portfolio .jumbotron {
